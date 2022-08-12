@@ -1,8 +1,16 @@
 import streamlit as st
+from PIL import Image
+
+
+image = Image.open('pythonimg.jpeg')
+
+
 
 st.write("""
 # 10 Cool Beginner Python Tricks That Will Make Your Life Easier
 """)
+
+st.image(image, caption='Photo by Miesha Maiden from Pexels')
 
 st.write("""
 ## 1. Walrus operator
